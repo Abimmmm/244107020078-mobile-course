@@ -19,6 +19,8 @@ class MyApp extends StatelessWidget {
             Icon(Icons.school, size: 72),
             SizedBox(height: 16),
             Text('Abim Must', style: TextStyle(fontSize: 24)),
+            Text('244107020078', style: TextStyle(fontSize: 24)),
+            Text('TI 3D', style: TextStyle(fontSize: 24)),
             Text('Pemrograman Mobile - Minggu 1'),
           ]),)
       )

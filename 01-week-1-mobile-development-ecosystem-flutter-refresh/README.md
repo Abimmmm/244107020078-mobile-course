@@ -1,17 +1,27 @@
 # my_first_app
 
-A new Flutter project.
+# Week 1 - Mobile Development Ecosystem & Flutter Refresh
 
-## Getting Started
+## Tujuan
+Memahami dasar-dasar Dart dan Flutter, serta menyiapkan environment development, dan membuat aplikasi flutter sederhana.
 
-This project is a starting point for a Flutter application.
+## Fitur Utama
+- Mengubah UI default pada flutter
 
-A few resources to get you started if this is your first Flutter project:
+## Stack Teknologi
+- Flutter
+- Dart
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+## Cara Menjalankan
+1. Masuk ke folder ini: `cd 01-week-1-mobile-development-ecosystem-flutter-refresh`
+2. Jalankan aplikasi: `flutter run`
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Refleksi 
+- Kapan native lebih tepat dipilih daripada cross-platform?
+Jawab : ketika memerlukan kontrol platform yang tinggi dan memerlukan akses API native langsung.
+
+- Bagaimana perubahan state berhubungan dengan widget tree dan UI deklaratif?
+Jawab :  UI menggambarkan state saat ini. Semua bagian UI adalah widget yang disusun sebagai pohon, misalnya MaterialApp → Scaffold → Column → Text.
+
+- Mengapa commit kecil dengan pesan jelas bermanfaat bagi pekerjaan tim dan portfolio?
+Jawab : karena dengan penjelasan yang jelas tim akan lebih mudah untuk memahami perubahan yang telah dicommit tanpa membaca ratusan baris kode.
