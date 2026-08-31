@@ -25,3 +25,6 @@ Jawab :  UI menggambarkan state saat ini. Semua bagian UI adalah widget yang dis
 
 - Mengapa commit kecil dengan pesan jelas bermanfaat bagi pekerjaan tim dan portfolio?
 Jawab : karena dengan penjelasan yang jelas tim akan lebih mudah untuk memahami perubahan yang telah dicommit tanpa membaca ratusan baris kode.
+
+## ScreenShot
+![Screenshot aplikasi](Screenshots/image.png)
