@@ -4,8 +4,6 @@ Nama: Abim Must
 NIM: 244107020078
 Kelas: TI 3D
 
-Laporan ini isinya progres dari codelab #02, mulai dari demo/warm-up sampai testing dan refleksi.
-
 ## Warm-up: ProfileCard
 
 Sebelum bikin dashboard, latihan dulu bikin kartu profil pakai `Container`, `Row`, `Column`, `Expanded`.
