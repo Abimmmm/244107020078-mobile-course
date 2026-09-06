@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 
 void main() => runApp(const DashboardApp());
+
 class DashboardPage extends StatelessWidget {
   const DashboardPage({
     required this.isDark,
@@ -17,16 +18,24 @@ class DashboardPage extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Student Dashboard'),
         actions: [
-          Row(
-            children: [
-              Icon(isDark ? Icons.dark_mode : Icons.light_mode),
-              const SizedBox(width: 4),
-              CupertinoSwitch(
-                value: isDark,
-                onChanged: onDarkChanged,
-              ),
-              const SizedBox(width: 12),
-            ],
+          Semantics(
+            label: isDark ? 'Mode gelap aktif' : 'Mode terang aktif',
+            toggled: isDark,
+            child: Row(
+              children: [
+                ExcludeSemantics(
+                  child: Icon(isDark ? Icons.dark_mode : Icons.light_mode),
+                ),
+                const SizedBox(width: 4),
+                ExcludeSemantics(
+                  child: CupertinoSwitch(
+                    value: isDark,
+                    onChanged: onDarkChanged,
+                  ),
+                ),
+                const SizedBox(width: 12),
+              ],
+            ),
           ),
         ],
       ),
@@ -66,8 +75,8 @@ class _DashboardAppState extends State<DashboardApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(useMaterial3: true, colorSchemeSeed: Colors.indigo),
-      darkTheme: ThemeData(useMaterial3: true, brightness: Brightness.dark, colorSchemeSeed: Colors.indigo),
+      theme: ThemeData(colorSchemeSeed: Colors.indigo),
+      darkTheme: ThemeData(brightness: Brightness.dark, colorSchemeSeed: Colors.indigo),
       themeMode: ThemeMode.system,
       home: DashboardPage(
         isDark: isDark,
@@ -76,6 +85,7 @@ class _DashboardAppState extends State<DashboardApp> {
     );
   }
 }
+
 class DashboardCard extends StatelessWidget {
   const DashboardCard({required this.title, required this.value, super.key});
   final String title;
@@ -83,15 +93,27 @@ class DashboardCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Card(
-      child: Padding(
-        padding: const EdgeInsets.all(20),
-        child: Row(children: [
-          Expanded(child: Text(title)),
-          Text(value, style: Theme.of(context).textTheme.headlineSmall),
-        ]),
+    return MergeSemantics(
+      child: Semantics(
+        label: '$title: $value',
+        child: Card(
+          child: Padding(
+            padding: const EdgeInsets.all(20),
+            child: Row(children: [
+              Expanded(
+                child: Text(title, overflow: TextOverflow.ellipsis),
+              ),
+              Flexible(
+                child: Text(
+                  value,
+                  overflow: TextOverflow.ellipsis,
+                  style: Theme.of(context).textTheme.headlineSmall,
+                ),
+              ),
+            ]),
+          ),
+        ),
       ),
     );
   }
 }
-
