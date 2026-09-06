@@ -6,15 +6,7 @@ Kelas: TI 3D
 
 ## Warm-up: ProfileCard
 
-Sebelum bikin dashboard, latihan dulu bikin kartu profil pakai `Container`, `Row`, `Column`, `Expanded`.
-
 ![ProfileCard](Screenshots/Screenshot%20(795).png)
-
-Waktu eksperimen (disuruh hapus `Expanded` terus lihat efeknya), sempat kena error karena salah taruh kurung di `Expanded(child: Column(...))` — error-nya `A value of type '({Column child})' can't be assigned to a variable of type 'Widget'`.
-
-![error waktu eksperimen](Screenshots/Screenshot%20(793).png)
-
-Setelah dibenerin strukturnya, jalan normal lagi:
 
 ![sudah fix](Screenshots/Screenshot%20(794).png)
 
@@ -22,21 +14,16 @@ Terus nambahin baris "Email" pakai pola yang sama kayak NIM/Kelas (`Row` + `Expa
 
 ## Dashboard responsif
 
-Project `responsive_dashboard` dibuat sesuai codelab: `DashboardApp` diubah dari `StatelessWidget` jadi `StatefulWidget` biar bisa toggle dark mode manual pakai `CupertinoSwitch`, dan `LayoutBuilder` dipakai buat nentuin jumlah kolom grid.
-
 Layar lebar (≥700px), 2 kolom, dark mode nyala:
 
 ![dashboard 2 kolom dark](Screenshots/Screenshot%20(796).png)
 
-Layar sempit (<700px), 1 kolom, light mode:
+Layar sempit (<700px), 1 kolom:
 
 ![dashboard 1 kolom light](Screenshots/Screenshot%20(797).png)
 
-Toggle switch-nya berfungsi, keliatan dari dua screenshot di atas temanya beda tanpa perlu ganti kode widget satu-satu — cuma `setState` doang, jadi kelihatan bedanya sama cara imperative.
 
 ## AI Prompt Challenge
-
-Setelah dashboard jalan sendiri, baru coba tiga prompt yang diminta codelab ke Claude buat bandingin alternatif desain.
 
 **Prompt 1 — bandingin GridView vs LayoutBuilder+Column.** Intinya: GridView.count enak karena ringkas, tapi `childAspectRatio` yang di-set tetap bisa bikin masalah kalau user gedein ukuran font di HP-nya (aksesibilitas), soalnya tinggi kartu dikunci rasio. Kalau pakai Column manual, tinggi kartu bisa ngikutin konten jadi lebih aman, tapi kodenya lebih panjang.
 
