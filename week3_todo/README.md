@@ -31,27 +31,27 @@ flutter test
 
 ### State kosong (ToDo)
 
-![ToDo kosong](screenshots/ScreenShot%20%28802%29.png)
+![ToDo kosong](Screenshots/ScreenShot%20%28802%29.png)
 
 ### AsyncValue — state success
 
-![Data berhasil dimuat](screenshots/ScreenShot%20%28803%29.png)
+![Data berhasil dimuat](Screenshots/ScreenShot%20%28803%29.png)
 
 ### AsyncValue — state loading
 
-![Loading spinner](screenshots/ScreenShot%20%28804%29.png)
+![Loading spinner](Screenshots/ScreenShot%20%28804%29.png)
 
 ### AsyncValue — state error + tombol retry
 
-![Error dan tombol coba lagi](screenshots/ScreenShot%20%28805%29.png)
+![Error dan tombol coba lagi](Screenshots/ScreenShot%20%28805%29.png)
 
 ### Halaman Statistik — success
 
-![Statistik berhasil dimuat](screenshots/ScreenShot%20%28806%29.png)
+![Statistik berhasil dimuat](Screenshots/ScreenShot%20%28806%29.png)
 
 ### `flutter analyze` & `flutter test` lolos
 
-![Analyze dan test lolos](screenshots/analyze.png)
+![Analyze dan test lolos](Screenshots/analyze.png)
 ```
 Analyzing week3_todo...
 No issues found! (ran in 2.5s)
