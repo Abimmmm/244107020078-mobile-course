@@ -31,23 +31,23 @@ flutter test
 
 ### State kosong (ToDo)
 
-![ToDo kosong](Screenshots/ScreenShot%20%28802%29.png)
+![ToDo kosong](Screenshots/satu.png)
 
 ### AsyncValue — state success
 
-![Data berhasil dimuat](Screenshots/ScreenShot%20%28803%29.png)
+![Data berhasil dimuat](Screenshots/dua.png)
 
 ### AsyncValue — state loading
 
-![Loading spinner](Screenshots/ScreenShot%20%28804%29.png)
+![Loading spinner](Screenshots/tiga.png)
 
 ### AsyncValue — state error + tombol retry
 
-![Error dan tombol coba lagi](Screenshots/ScreenShot%20%28805%29.png)
+![Error dan tombol coba lagi](Screenshots/empat.png)
 
 ### Halaman Statistik — success
 
-![Statistik berhasil dimuat](Screenshots/ScreenShot%20%28806%29.png)
+![Statistik berhasil dimuat](Screenshots/lima.png)
 
 ### `flutter analyze` & `flutter test` lolos
 
