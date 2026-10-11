@@ -5,9 +5,15 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: Center(
-        child: Text('Campus Notify'),
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Campus Notify'),
+      ),
+      body: const Center(
+        child: Text(
+          'Menunggu pengumuman kampus...',
+          style: TextStyle(fontSize: 18),
+        ),
       ),
     );
   }
