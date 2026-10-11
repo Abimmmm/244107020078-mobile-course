@@ -115,13 +115,6 @@ Hasil akhir menunjukkan `No issues found!` dan seluruh test berhasil.
 
 ![Flutter Test and Analyze](screenshots/sstest.png)
 
-Test yang dibuat mencakup:
-
-1. Parsing route notifikasi, termasuk route kosong dan route tanpa `/`.
-2. Validasi payload `id` pengumuman.
-3. Logika status login berdasarkan keberadaan access token.
-4. Logika ketika refresh token kosong/gagal sehingga pengguna harus login ulang.
-
 ## AI Challenge
 
 AI digunakan untuk membantu membuat draf awal implementasi `PushService`, background handler, routing FCM, dan test. Hasil AI tidak langsung digunakan seluruhnya dan dilakukan pemeriksaan manual sebelum diterapkan.
